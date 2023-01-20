@@ -1,0 +1,166 @@
+.container {
+    display: block;
+    min-height: 100vh;
+    margin: 0;
+} 
+
+.content {
+    display: block;
+}
+
+.logo_title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.logoPro {
+    background-image: url(../../asset/logo.jpg);
+    background-size: cover;
+}
+
+.title {
+    padding-top: 30px;
+    font-family: "Cantarell", Monaco, monospace;
+    text-align: center;
+    font-size: 22px;
+}
+
+.btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+    padding-bottom: 3em;
+    justify-content: space-around;
+}
+
+.btn_mmt {
+    border: 1px solid;
+    border-radius: 20px;
+    display: inline-block;
+    font-family: "Cantarell", Monaco, monospace;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn_mmt_container {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.toggle_container {
+    margin-top: 50px;
+}
+
+#toggle_checkbox
+{
+    display: none;
+}
+
+.label1 {
+    display: block;
+    width: 116px;
+    height: 52px;
+    margin: 0 auto;
+    background-color: #77b5fe;
+    border-radius: 56px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.3s ease background-color;
+    overflow: hidden;
+}
+
+#star
+{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 30px;
+    height: 30px;
+    background-color: #fafd0f;
+    transform: scale(1);
+    border-radius: 50%;
+    transition: 0.3s ease top, 0.3s ease left, 0.3s ease transform, 0.3s ease background-color;
+    z-index: 1;
+}
+
+#star-1
+{
+    position: relative;
+}
+
+#star-2
+{
+    position: absolute;
+    top: -3.5px;
+    left: -5px;
+    transform: rotateZ(38deg);
+}
+
+.star
+{
+    top: -3.5px;
+    left: -7px;
+    font-size: 54px;
+    line-height: 28px;
+    color: #fafd0f;
+    transition: 0.3s ease color;
+}
+
+#moon
+{
+    position: absolute;
+    bottom: -52px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s ease bottom;
+}
+
+#moon:before
+{
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -17px;
+    width: 40px;
+    height: 40px;
+    background-color:#03a9f4;
+    border-radius: 50%;
+    transition: 0.3s ease background-color;
+}
+
+#toggle_checkbox:checked + label
+{
+    background-color: #000;
+}
+
+#toggle_checkbox:checked + label #star
+{
+    top: 3px;
+    left: 64px;
+    transform: scale(0.3);
+    background-color: yellow;
+}
+
+#toggle_checkbox:checked + label .star
+{
+    color: yellow;
+}
+
+#toggle_checkbox:checked + label #moon
+{
+    bottom: 8px;
+}
+
+#toggle_checkbox:checked + label #moon:before
+{
+    background-color: #000;
+}
+
+.msg {
+    font-family: "Cantarell", Monaco, monospace;
+    text-align: center;
+}
